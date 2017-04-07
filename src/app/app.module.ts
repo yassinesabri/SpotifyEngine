@@ -8,6 +8,9 @@ import {SearchComponent} from './components/search/search.component';
 import { RouterModule }   from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
+import {ArtistComponent} from './components/artist/artist.component';
+import {Artist} from 'Artist';
+import {Album} from 'Album';
 @NgModule({
   imports:      [ BrowserModule , FormsModule , HttpModule ,
     RouterModule.forRoot([
@@ -18,10 +21,14 @@ import {HttpModule} from '@angular/http';
       {
         path: 'about',
         component: AboutComponent
+      },
+      {
+        path: 'artist/:id',
+        component: ArtistComponent
       }
     ])
   ],
-  declarations: [ AppComponent , NavbarComponent , AboutComponent , SearchComponent ],
+  declarations: [ AppComponent , NavbarComponent , AboutComponent , SearchComponent , ArtistComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
