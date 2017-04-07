@@ -9,8 +9,8 @@ import { RouterModule }   from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {ArtistComponent} from './components/artist/artist.component';
-import {Artist} from 'Artist';
-import {Album} from 'Album';
+import {Artist} from './Artist';
+import {Album} from './Album';
 @NgModule({
   imports:      [ BrowserModule , FormsModule , HttpModule ,
     RouterModule.forRoot([
