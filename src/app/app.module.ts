@@ -6,8 +6,10 @@ import {NavbarComponent} from './components/navbar/navbar.component';
 import {AboutComponent} from './components/about/about.component';
 import {SearchComponent} from './components/search/search.component';
 import { RouterModule }   from '@angular/router';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
 @NgModule({
-  imports:      [ BrowserModule ,
+  imports:      [ BrowserModule , FormsModule , HttpModule ,
     RouterModule.forRoot([
       {
         path: '',
