@@ -11,6 +11,7 @@ import {HttpModule} from '@angular/http';
 import {ArtistComponent} from './components/artist/artist.component';
 import {Artist} from './Artist';
 import {Album} from './Album';
+import {AlbumComponent} from './components/album/album.component';
 @NgModule({
   imports:      [ BrowserModule , FormsModule , HttpModule ,
     RouterModule.forRoot([
@@ -25,10 +26,14 @@ import {Album} from './Album';
       {
         path: 'artist/:id',
         component: ArtistComponent
+      },
+      {
+        path: 'album/:id',
+        component: AlbumComponent
       }
     ])
   ],
-  declarations: [ AppComponent , NavbarComponent , AboutComponent , SearchComponent , ArtistComponent ],
+  declarations: [ AppComponent , NavbarComponent , AboutComponent , SearchComponent , ArtistComponent , AlbumComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
